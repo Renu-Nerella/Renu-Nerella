@@ -1,1 +1,11 @@
-
+import java.util.*;
+public class Constructor{
+public static void main(String[] args){
+ArrayList<String>list1 = new ArrayList<String>();
+list1.add(1+2+3);
+        list1.add(0+9+8);
+        list1.add(3+4+5);
+        Iterator itr = list1.iterator();
+        while(itr.hasNext()){
+            System.out.println(((Iterator<?>) itr).next());
+        }

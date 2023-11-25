@@ -1,18 +1,20 @@
-public class Employee {
-    String name;
-    String job;
-    Long salary;
-    String address;
-    int pincode;
+public class Employee extends Work {
+    private String companyName;
+    private String  employeeType;
+    public Employee(String ibm, String s){
+        super("Manager", "23/3/2021", "1_00_000", "4653764");
+        this.companyName = companyName;
+        this.employeeType = employeeType;
+    }
 
     @Override
     public String toString() {
         return "Employee{" +
-                "name='" + name + '\'' +
-                ", job='" + job + '\'' +
-                ", salary=" + salary +
-                ", address='" + address + '\'' +
-                ", pincode=" + pincode +
+                "companyName='" + companyName + '\'' +
+                ", employeeType='" + employeeType + '\'' +
                 '}';
     }
-}
+
+
+    }
+
